@@ -1,0 +1,1571 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "myDnn"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"link_directories",
+			"target_link_libraries",
+			"include_directories",
+			"target_include_directories",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -std=c++14 -ldl -pthread  "
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/allocators.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/document.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/encodedstream.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/encodings.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/error/en.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/error/error.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/filereadstream.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/filestream.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/filewritestream.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/fwd.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/genericstream.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/biginteger.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/diyfp.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/dtoa.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/ieee754.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/itoa.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/meta.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/pow10.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/regex.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/stack.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/strfunc.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/strtod.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/internal/swap.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/istreamwrapper.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/memorybuffer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/memorystream.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/msinttypes/inttypes.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/msinttypes/stdint.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/ostreamwrapper.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/pointer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/prettywriter.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/rapidjson.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/reader.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/schema.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/stream.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/stringbuffer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/cereal/external/rapidjson/writer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/CLCudaAPI/clpp11.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/CLCudaAPI/cupp11.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/eight_bit_int_gemm/eight_bit_int_gemm.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/allocator.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/block_params.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/common.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/compute.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/fixedpoint.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/fixedpoint_neon.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/iterator.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/kernel_SSE.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/kernel_default.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/kernel_neon.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/kernel_reference.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/multi_thread_gemm.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/output.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/output_neon.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/pack.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/pack_SSE.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/pack_neon.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/single_thread_gemm.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/unpack.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/internal/unpack_neon.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/meta/multi_thread_common.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/meta/multi_thread_gemm.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/meta/multi_thread_gemv.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/meta/operations_common.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/meta/single_thread_gemm.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/meta/single_thread_gemm_arm32.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/meta/single_thread_gemm_arm64.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/profiling/instrumentation.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/profiling/profiler.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/public/bit_depth.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/public/gemmlowp.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/public/map.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/public/output_stages.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/gemmlowp/public/reference_gemm.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/stb/stb_image.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/stb/stb_image_resize.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/third_party/stb/stb_image_write.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/activation_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/asinh_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/elu_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/leaky_relu_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/relu_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/selu_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/sigmoid_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/softmax_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/softplus_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/softsign_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/tanh_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/activations/tanh_p1m2_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/config.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/backend.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/backend_avx.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/backend_tiny.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/framework/device.fwd.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/framework/device.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/framework/op_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/framework/program.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/framework/program_manager.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/framework/tensor.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/framework/tensor_utils.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/avx_deconv2d_back_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/avx_deconv2d_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/avx_kernel_common.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/conv2d_grad_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/conv2d_grad_op_avx.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/conv2d_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/conv2d_op_avx.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/conv2d_op_internal.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/conv2d_op_libdnn.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/conv2d_op_nnpack.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/conv2d_op_opencl.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/fully_connected_grad_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/fully_connected_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/fully_connected_op_avx.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/fully_connected_op_cblas.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/fully_connected_op_intel_mkl.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/fully_connected_op_internal.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/fully_connected_op_nnpack.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/global_avepool_grad_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/global_avepool_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/global_avepool_op_avx.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/global_avepool_op_internal.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/gru_cell_grad_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/gru_cell_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/gru_cell_op_internal.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/lstm_cell_grad_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/lstm_cell_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/lstm_cell_op_internal.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/maxpool_grad_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/maxpool_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/maxpool_op_avx.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/maxpool_op_internal.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/maxpool_op_nnpack.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/nnp_deconv2d_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/rnn_cell_grad_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/rnn_cell_op.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/rnn_cell_op_internal.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/tiny_deconv2d_back_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/tiny_deconv2d_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/tiny_quantization_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/tiny_quantized_conv2d_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/tiny_quantized_deconv2d_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/tiny_quantized_fully_connected_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/kernels/tiny_quantized_matmul_kernel.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/params/conv_params.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/params/deconv_params.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/params/fully_params.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/params/global_avepool_params.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/params/gru_cell_params.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/params/lstm_cell_params.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/params/maxpool_params.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/params/params.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/params/rnn_cell_params.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/core/session.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/io/caffe/layer_factory.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/io/caffe/layer_factory_impl.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/io/cifar10_parser.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/io/display.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/io/layer_factory.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/io/mnist_parser.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/arithmetic_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/average_pooling_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/average_unpooling_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/batch_normalization_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/cell.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/cells.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/concat_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/convolutional_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/deconvolutional_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/dropout_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/fully_connected_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/global_average_pooling_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/gru_cell.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/input_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/l2_normalization_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/layers.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/linear_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/lrn_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/lstm_cell.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/max_pooling_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/max_unpooling_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/partial_connected_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/power_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/quantized_convolutional_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/quantized_deconvolutional_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/quantized_fully_connected_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/recurrent_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/rnn_cell.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/slice_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/layers/zero_pad_layer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/lossfunctions/loss_function.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/models/alexnet.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/network.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/node.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/nodes.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/optimizers/optimizer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/aligned_allocator.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/colored_print.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/deform.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/deserialization_helper.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/gradient_check.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/graph_visualizer.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/image.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/macro.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/math_functions.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/nms.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/nn_error.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/parallel_for.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/product.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/random.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/serialization_functions.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/serialization_helper.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/serialization_layer_list.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/target_cost.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/util.h"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/ali/ProjLAB/LearningCpp/MyNNEngine/tiny_dnn/tiny_dnn/util/weight_init.h"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/ali/installations/boost_1_66_0"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/ali/installations/NumCpp/include"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/home/ali/installations/opencv/include/opencv4"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "foolib::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "myDnn::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-std=c++14 -ldl -pthread",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_calib3d",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_core",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_dnn",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_features2d",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_flann",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_gapi",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_highgui",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_imgcodecs",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_imgproc",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_ml",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_objdetect",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_photo",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_stitching",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_video",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_videoio",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_aruco",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_bgsegm",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_bioinspired",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_ccalib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_datasets",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_dnn_objdetect",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_dnn_superres",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_dpm",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_face",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_freetype",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_fuzzy",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_hfs",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_img_hash",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_intensity_transform",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_line_descriptor",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_optflow",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_phase_unwrapping",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_plot",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_quality",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_rapid",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_reg",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_rgbd",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_saliency",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_shape",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_stereo",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_structured_light",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_superres",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_surface_matching",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_text",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_tracking",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_videostab",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_xfeatures2d",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_ximgproc",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_xobjdetect",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_xphoto",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-L/home/ali/installations/boost_1_66_0/libs",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_calib3d:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_core:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_dnn:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_features2d:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_flann:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_gapi:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_highgui:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_imgcodecs:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_imgproc:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_ml:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_objdetect:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_photo:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_stitching:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_video:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_videoio:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_aruco:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_bgsegm:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_bioinspired:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_ccalib:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_datasets:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_dnn_objdetect:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_dnn_superres:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_dpm:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_face:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_freetype:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_fuzzy:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_hfs:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_img_hash:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_intensity_transform:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_line_descriptor:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_optflow:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_phase_unwrapping:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_plot:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_quality:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_rapid:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_reg:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_rgbd:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_saliency:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_shape:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_stereo:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_structured_light:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_superres:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_surface_matching:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_text:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_tracking:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_videostab:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_xfeatures2d:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_ximgproc:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_xobjdetect:/home/ali/ProjLAB/LearningCpp/MyNNEngine/opencv_xphoto:/home/ali/installations/boost_1_66_0/libs:/home/ali/ProjLAB/LearningCpp/MyNNEngine/build:/home/ali/installations/opencv/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "libfoolib.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_gapi.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_stitching.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_aruco.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_bgsegm.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_bioinspired.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_ccalib.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_dnn_objdetect.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_dnn_superres.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_dpm.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_face.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_freetype.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_fuzzy.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_hfs.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_img_hash.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_intensity_transform.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_line_descriptor.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_quality.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_rapid.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_reg.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_rgbd.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_saliency.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_stereo.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_structured_light.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_superres.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_surface_matching.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_tracking.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_videostab.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_xfeatures2d.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_xobjdetect.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_xphoto.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_shape.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_highgui.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_datasets.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_plot.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_text.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_dnn.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_ml.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_phase_unwrapping.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_optflow.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_ximgproc.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_video.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_videoio.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_imgcodecs.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_objdetect.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_calib3d.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_features2d.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_flann.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_photo.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_imgproc.so.4.3.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/home/ali/installations/opencv/lib/libopencv_core.so.4.3.0",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "myDnn",
+	"nameOnDisk" : "myDnn",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -1,0 +1,4 @@
+# ninja log v5
+0	162	1585898730	CMakeFiles/Hello.dir/src/main.cpp.o	218e7e3ffa0343b2
+0	254	1585898730	CMakeFiles/Hello.dir/src/foo.cpp.o	490de47fcc381cc0
+256	326	1585898731	Hello	3ae9fbe55b86d87c

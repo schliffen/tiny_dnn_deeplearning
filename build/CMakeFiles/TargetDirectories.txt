@@ -1,0 +1,4 @@
+/home/ali/ProjLAB/LearningCpp/MyNNEngine/build/CMakeFiles/edit_cache.dir
+/home/ali/ProjLAB/LearningCpp/MyNNEngine/build/CMakeFiles/rebuild_cache.dir
+/home/ali/ProjLAB/LearningCpp/MyNNEngine/build/CMakeFiles/foolib.dir
+/home/ali/ProjLAB/LearningCpp/MyNNEngine/build/CMakeFiles/myDnn.dir
