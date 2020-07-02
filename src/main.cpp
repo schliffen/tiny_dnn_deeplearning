@@ -46,19 +46,14 @@
 // }
 
 // connection table, see Table 1 in [LeCun1998]
-#define O true
-#define X false
-static const bool tbl [] = {
-    O, X, X, X, O, O, O, X, X, O, O, O, O, X, O, O,
-    O, O, X, X, X, O, O, O, X, X, O, O, O, O, X, O,
-    O, O, O, X, X, X, O, O, O, X, X, O, X, O, O, O,
-    X, O, O, O, X, X, O, O, O, O, X, X, O, X, O, O,
-    X, X, O, O, O, X, X, O, O, O, O, X, O, O, X, O,
-    X, X, X, O, O, O, X, X, O, O, O, O, X, O, O, O
-};
-#undef O
-#undef X
+// rescale output to 0-100
+template <typename Activation>
+double rescale(double x) {
+  Activation a(1);
+  return 100.0 * (x - a.scale().first) / (a.scale().second - a.scale().first);
+}
 
+//
 void check_data(std::vector<std::string> data, std::vector<int> target){
     for (int i=0; i<data.size(); i++){
         std::cout<< "data: "<< data[i] << " target: "<< target[i]<< std::endl;
@@ -67,47 +62,122 @@ void check_data(std::vector<std::string> data, std::vector<int> target){
 }
 
 void put_image(std::vector<std::string> imagefilename,
-                   double minv,
-                   double maxv,
-                   int w,
-                   int h,
-                   tiny_dnn::vec_t &data) {
+               std::vector<tiny_dnn::vec_t>    *train_images,
+               std::vector<tiny_dnn::label_t>  *train_labels,
+                double scale_min = 0,
+                double scale_max = 1,
+                int target_w =32,
+                int target_h =36,
+                int channels =3,
+                int x_padding =0,
+                int y_padding =0)
+    {
 
-  for (int i=0; i<imagefilename.size(); i++  ){     
+    if (x_padding < 0 || y_padding <0)
+        throw tiny_dnn::nn_error( "padding cannot be negative! ");
+    if ( scale_min > scale_max )
+        throw tiny_dnn::nn_error(" min scale is bigger than max scale");
+  
+    for (std::vector<std::string>::iterator imgname = imagefilename.begin(); imgname != imagefilename.end(); ++imgname ){     
         std::cout<< "reading image!\n";
-        tiny_dnn::image<> img(imagefilename[i], tiny_dnn::image_type::grayscale);
-        tiny_dnn::image<> resized = resize_image(img, w, h);
+        
+        std::cout <<  *imgname <<std::endl;
+        
+        
+        tiny_dnn::image<> temp( *imgname, tiny_dnn::image_type::rgb);
+        tiny_dnn::image<> resized = resize_image(temp, target_w, target_h);
+        //
+        resized.save("test_img_"+ std::to_string( random() ) + "_.jpg"  ); // saving the sample image
+        //
+        std::cout<< "resized size: " << resized.shape() << std::endl;    
 
-        resized.save("test_img_"+ std::to_string(i) + ".jpg"  );
+        tiny_dnn::vec_t img;    
+        //
+    
+        int w = target_w + 2 * x_padding;
+        int h = target_h + 2 * y_padding;
 
-        // mnist dataset is "white on black", so negate required
-        std::transform(
-            resized.begin(), resized.end(), std::back_inserter(data),
-            [=](uint8_t c) { return (255 - c) * (maxv - minv) / 255.0 + minv; });
+        img.resize(w * h * channels, scale_min);
+
+        for (int c = 0; c < channels; c++) {
+            for (int y = 0; y < target_h; y++) {
+                for (int x = 0; x < target_w; x++) {
+                    // std::cout<< "c="<< c << " y="<<y << " x="<< x<< std::endl;
+                    img[c * w * h + (y + y_padding) * w + x + x_padding] = scale_min + 
+                    (scale_max - scale_min) * resized[ x, y, c] / 255;
+                }
+            }
+        
+        
+        
+        }
+
+        // train_images->push_back(img);
+        // train_labels->push_back(label);
+        
+        
+        
+        }
+        // }
+
+
+        // std::transform(
+        //     resized.begin(), resized.end(), std::back_inserter(data),
+        //     [=](uint8_t c) { return (255 - c) * (maxv - minv) / 255.0 + minv; });
+
+        
 
 }
-std::cout<< "image set!\n";
+
+
+  
+
+
+
+
+
+template <typename N>
+void construct_net(N &nn) {
+  using conv    = tiny_dnn::convolutional_layer;
+  using pool    = tiny_dnn::max_pooling_layer;
+  using fc      = tiny_dnn::fully_connected_layer;
+  using relu    = tiny_dnn::relu_layer;
+  using softmax = tiny_dnn::softmax_layer;
+
+  const size_t n_fmaps  = 32;  ///< number of feature maps for upper layer
+  const size_t n_fmaps2 = 64;  ///< number of feature maps for lower layer
+  const size_t n_fc = 64;  ///< number of hidden units in fully-connected layer
+
+  nn << conv(32, 32, 5, 3, n_fmaps, tiny_dnn::padding::same)  // C1
+     << pool(32, 32, n_fmaps, 2)                              // P2
+     << relu(16, 16, n_fmaps)                                 // activation
+     << conv(16, 16, 5, n_fmaps, n_fmaps, tiny_dnn::padding::same)  // C3
+     << pool(16, 16, n_fmaps, 2)                                    // P4
+     << relu(8, 8, n_fmaps)                                        // activation
+     << conv(8, 8, 5, n_fmaps, n_fmaps2, tiny_dnn::padding::same)  // C5
+     << pool(8, 8, n_fmaps2, 2)                                    // P6
+     << relu(4, 4, n_fmaps2)                                       // activation
+     << fc(4 * 4 * n_fmaps2, n_fc)                                 // FC7
+     << fc(n_fc, 2) << softmax(2);                               // FC10
 }
+
 
 void train_lenet( std::vector<std::string> train_list, 
-                        std::vector<std::string> test_list, 
-                        tiny_dnn::vec_t train_labels, tiny_dnn::vec_t test_labels
-                         ) {
+                  std::vector<std::string> test_list, 
+                  std::vector<tiny_dnn::label_t> train_labels, 
+                  std::vector<tiny_dnn::label_t> test_labels) {
     // specify loss-function and learning strategy
     tiny_dnn::timer t;
     tiny_dnn::network<tiny_dnn::sequential> net;
     //core::backend_t backend_type = core::default_engine();
     
     //
-    net << tiny_dnn::layers::conv(32, 32, 5, 1, 6) << tiny_dnn::activation::tanh()  // in:32x32x1, 5x5conv, 6fmaps
-        << tiny_dnn::layers::ave_pool(28, 28, 6, 2) << tiny_dnn::activation::tanh() // in:28x28x6, 2x2pooling
-        << tiny_dnn::layers::fc(14 * 14 * 6, 120) << tiny_dnn::activation::tanh()   // in:14x14x6, out:120
-        << tiny_dnn::layers::fc(120, 2);   
+    construct_net( net );  
             
     
     tiny_dnn::adagrad optimizer;
 
-    std::cout << "load models..." << std::endl;
+    // std::cout << "load models..." << std::endl;
 
     // load MNIST dataset
     // std::vector<label_t> train_labels, train_labels;
@@ -128,7 +198,7 @@ void train_lenet( std::vector<std::string> train_list,
 
     optimizer.alpha *= static_cast<tiny_dnn::float_t>(std::sqrt(minibatch_size));
 
-    tiny_dnn::vec_t train_data, test_data;
+    // tiny_dnn::vec_t train_data, test_data;
 
 
     // vectors for iteration on the image list
@@ -143,6 +213,8 @@ void train_lenet( std::vector<std::string> train_list,
         // batchListBegin = train_list.begin() + ei * batch_size;
         // batchListEnd = train_list.begin() + (ei + 1) * batch_size;
         // tempvect =  train_list(batchListBegin, batchListEnd);
+        std::vector<tiny_dnn::vec_t>    train_images;
+        std::vector<tiny_dnn::label_t>  train_labels;
 
         std::cout<< "mem begin: "<< ei * batch_size << " mem end: "<< (ei + 1) * batch_size<< std::endl;
 
@@ -152,11 +224,10 @@ void train_lenet( std::vector<std::string> train_list,
         std::cout<< ei << "  here!---------- \n";
     
         
-        put_image( tempvect, minv, maxv, w, h, train_data); 
-
-
+        put_image( tempvect, &train_images, &train_labels); 
         
-        tempvect.clear();
+        // tempvect.clear();
+        /*
         // free(tempvect);
         std::cout<< train_data.size() << " function end \n";
         
@@ -179,6 +250,7 @@ void train_lenet( std::vector<std::string> train_list,
         net.train<tiny_dnn::mse>(optimizer, train_data, train_labels, minibatch_size, num_epochs,
                 on_enumerate_minibatch, on_enumerate_epoch);
 
+        */    
         std::cout << "end training." << std::endl;
     }
 
@@ -203,16 +275,14 @@ int main(){
     nc::NdArray<float> rateMeasured = { 0.05, 0.127, 0.094, 0.2122, 0.2729, 0.2665, 0.3317 };
 
     // create a random image with NumCpp
-    std::string img_dir = "/home/ali/ProjLAB/deeplearning/FaceDetectionProject/sample-images/Howard.jpg", imgsDir = "/home/ali/ProjLAB/LearningCpp/dataset/dogvscat/test_set/";
+    std::string img_dir = "/home/ali/ProjLAB/deeplearning/FaceDetectionProject/sample-images/Howard.jpg", 
+                imgsDir = "/home/ali/ProjLAB/LearningCpp/dataset/dogvscat/test_set/";
     cv::Mat img=cv::imread(img_dir);
     cv::resize(img, img, cv::Size(256, 256));
 
-    auto ncArray = nc::random::randInt<nc::uint8>({ 128, 128 }, 0, nc::DtypeInfo<nc::uint8>::max());
-
-    auto cvArray = cv::Mat( ncArray.numRows(), ncArray.numCols(), CV_8SC1, ncArray.data());
-
-
-    auto arrImg = nc::NdArray<nc::uint8>(img.data, img.rows, img.cols); 
+    // auto ncArray = nc::random::randInt<nc::uint8>({ 128, 128 }, 0, nc::DtypeInfo<nc::uint8>::max());
+    // auto cvArray = cv::Mat( ncArray.numRows(), ncArray.numCols(), CV_8SC1, ncArray.data());
+    auto arrImg = nc::NdArray<nc::uint8>(img.data, img.rows, img.cols);  // opencv to Ndarray
 
     const float coff=.2; 
     // ncArray = arrImg +  nc::multiply (coff, ncArray) ;
@@ -227,7 +297,7 @@ int main(){
     //
     std::cout<< "cats data size: "<< cats.size()<< " dogs data size: " << dogs.size() << std::endl; 
     std::vector< std::string > input_train, input_test;
-    tiny_dnn::vec_t target_train, target_test;
+    std::vector<tiny_dnn::label_t> target_train, target_test;
     int distributor;
     for (int i=0; i<cats.size() + dogs.size(); i++ ){
         distributor = (random() % 100); 
